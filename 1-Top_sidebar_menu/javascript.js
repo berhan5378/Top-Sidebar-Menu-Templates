@@ -18,9 +18,3 @@ arrow.addEventListener('click', () => {
     document.querySelector('.side-bar .side-bar-bottom .logout p').classList.toggle('active_side-bar_style');
   });
  
- 
-  
- 
- 
- 
- 
