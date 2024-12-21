@@ -21,7 +21,6 @@
     background: #fbfcfc;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-
  }
 
  .side-bar .profile{
@@ -33,7 +32,7 @@
 .side-bar .bxs-chevron-right-circle{
     position: absolute;
     right: -23px;
-    font-size: 25px; 
+    font-size: 25px;  
 }
 
  .side-bar .profile img{
@@ -183,34 +182,27 @@
  for toggle
  */
 
- .active_right_circle{
-    transition: 1s ease-in-out;
+ .active_right_circle{ 
     transform: rotate(180deg);
  }
 
 .active_side-bar{
-    width: 80px;
+    width: 80px; 
 }
 
 .active_side-bar_style{
-    display: none;
+    display: none; 
 }
 
 .active_side-bar-li{
     justify-content: center;
 }
-
-.active_side-bar-search-icon{
-    left: 20px;
-}
-
-.active_side-bar-search-input{
-    width: 0;
-}
-
  @media (max-width: 1245px){
     .side-bar{
         width: 30%;
+    }
+    .active_side-bar{
+        width: 80px;
     }
  }
 
@@ -218,17 +210,26 @@
     .side-bar{
         width: 40%; 
     }
+    .active_side-bar{
+        width: 80px;
+    }
  }
 
  @media (max-width: 620px){
     .side-bar{
         width: 80%;
     }
+    .active_side-bar{
+        width: 80px;
+    }
  } 
 
  @media (max-width: 380px){
     .side-bar{
         width: 90%;
+    }
+    .active_side-bar{
+        width: 80px;
     }
  } 
 
@@ -254,6 +255,10 @@
     .side-bar-search .input{
         width: 0;
     }
+    .side-bar .bxs-chevron-right-circle{
+        display: none; 
+    }
+    
  } 
 
  @media (max-height:600px){
