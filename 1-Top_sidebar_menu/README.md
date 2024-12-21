@@ -1,2 +1,1 @@
-![image](imag\Screenshot 2024-12-21 111328.png)
- 
+![image](imag\2.png)![image](imag\1.png)
