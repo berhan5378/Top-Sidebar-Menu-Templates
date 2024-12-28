@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+ }
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+    height: 2px;
+    width: 2px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 6px; 
+  }
+  
+  *::-webkit-scrollbar-track:hover {
+    background-color: #B8C0C2;
+  }
+  
+  *::-webkit-scrollbar-track:active {
+    background-color: #B8C0C2;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #397524;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #62A34B;
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #62A34B;
+  }
+
+ body{
+    background: #ccf0f5;
+    position: relative;
+ }
+
+ .side-bar{
+    position: absolute;
+    left: 0;
+    width: 280px;
+    height: 100vh;
+    padding: 10px;
+    background: #fbfcfc;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    transition: 1s ease-in-out;
+ }
+
+ .side-bar .profile{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+ }
+.side-bar .bxs-chevron-right-circle{
+    position: absolute;
+    right: -12px;
+    top: 20px;
+    font-size: 25px;  
+    transition: 1s ease-in-out;
+}
+
+ .side-bar .profile img{
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    cursor: pointer;
+ }
+
+ .side-bar .profile .username h3{
+    color: #566573;
+    cursor: pointer;
+ }
+
+ .side-bar .profile .username p{
+    font-size: 14px;
+    color: #808b96;
+    cursor: pointer;
+ }
+
+ .side-bar-search {
+	display: flex;
+	align-items: center;
+	position: relative;
+	max-width: 100%; 
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.side-bar-search .input {
+	font-size: 18px;
+	padding: 12px 10px;
+	width: 100%;
+	padding-left: 49px;
+	outline: none;
+	background: #e5e7e9;
+	color: #566573;
+    font-weight: bold;
+    font-size: 14px;
+	border: none;
+	border-radius: 5px; 
+}
+
+.side-bar-search .input::placeholder {
+	color: #808b96;
+}
+
+.side-bar-search .svg_icon {
+	position: absolute;
+	left: 19px;
+	fill: #808b96;
+	width: 18px;
+	height: 18px;
+}
+
+.side-bar-contents{
+    overflow-y: auto; 
+    overflow-x: hidden; 
+    height: calc(100vh - 280px);
+}
+
+.side-bar .side-bar-link{
+    display: flex;
+	align-items: center; 
+    gap: 17px;
+    margin: 4px 0px;  
+    padding: 12px 10px; 
+    padding-left: 17px;
+    font-size: 16px;
+    font-weight: 400; 
+	border: none;
+	border-radius: 5px; 
+    text-decoration: none;
+    color: #566573; 
+}
+
+.side-bar :is(.side-bar-link,.side-bar-bottom) i{
+    font-size: 25px; 
+}
+
+.side-bar .side-bar-link:nth-child(2){
+    background: #7056d6;
+    color: #fbfcfc;
+}
+ 
+.side-bar :is(.side-bar-link,.side-bar-bottom .logout,.side-bar-bottom .Themes):hover{
+    background: #eaeded; 
+}
+
+.side-bar .side-bar-link:nth-child(2):hover{
+    background: #7056d6;
+    color: #fbfcfc;
+}
+
+.side-bar .side-bar-bottom{
+     
+    border-top: 1px solid gray; 
+    overflow: hidden;
+}
+
+.side-bar .side-bar-bottom .logout{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 10px; 
+    font-size: 16px;
+    font-weight: 400; 
+	border: none;
+	border-radius: 5px; 
+    text-decoration: none;
+    color: #566573; 
+}
+
+.side-bar .side-bar-bottom .Themes-Checkbox{
+    display: flex;
+    align-items: center; 
+    width: 45px;
+    height: 20px;
+    background: #000;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+ }
+ 
+ .side-bar .side-bar-bottom .Themes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 10px; 
+    font-size: 16px;
+    font-weight: 400; 
+	border: none;
+	border-radius: 5px;
+    color: #566573;
+    cursor: pointer;
+ }
+
+ .side-bar .side-bar-bottom .Themes span{
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+ }
+
+ .side-bar .side-bar-bottom .Themes-Checkbox p{
+    width: 20px;
+    height: 20px;
+    border-radius: 55%;
+    background: #eaeded;
+ }
+
+ /*
+ for toggle
+ */
+ .active_right_circle{ 
+    transform: rotate(180deg);
+ }
+ 
+.active_side-bar{
+    width: 80px; 
+}
