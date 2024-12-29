@@ -50,7 +50,7 @@
     background: #fbfcfc;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-    transition: 1s ease-in-out;
+    transition: .5s ease-in-out;
  }
 
  .side-bar .profile{
@@ -64,7 +64,7 @@
     right: -12px;
     top: 20px;
     font-size: 25px;  
-    transition: 1s ease-in-out;
+    transition: .5s ease-in-out;
 }
 
  .side-bar .profile img{
@@ -161,16 +161,16 @@
 }
 
 .side-bar .side-bar-bottom{
-     
     border-top: 1px solid gray; 
+    padding-top: 5px;
     overflow: hidden;
 }
 
 .side-bar .side-bar-bottom .logout{
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 12px 10px; 
+    gap: 20px;
+    padding: 12px 10px 12px 15px;
     font-size: 16px;
     font-weight: 400; 
 	border: none;
@@ -179,21 +179,9 @@
     color: #566573; 
 }
 
-.side-bar .side-bar-bottom .Themes-Checkbox{
-    display: flex;
-    align-items: center; 
-    width: 45px;
-    height: 20px;
-    background: #000;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
- }
- 
  .side-bar .side-bar-bottom .Themes{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 10px; 
+    position: relative; 
+    padding: 12px 10px 12px 15px;
     font-size: 16px;
     font-weight: 400; 
 	border: none;
@@ -205,7 +193,27 @@
  .side-bar .side-bar-bottom .Themes span{
     display: flex;
     align-items: center; 
-    gap: 10px; 
+    gap: 20px; 
+    height: 30px;
+    transform: translateX(0px);
+    transition: transform .5s ease-in-out;
+ } 
+
+ .side-bar .side-bar-bottom .Themes span.translateXMinus200 {
+    transform: translateX(-200px);
+}
+
+ .side-bar .side-bar-bottom .Themes-Checkbox{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    display: flex;
+    align-items: center; 
+    width: 45px;
+    height: 20px;
+    background: #000;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
  }
 
  .side-bar .side-bar-bottom .Themes-Checkbox p{
