@@ -1,4 +1,4 @@
-const arrow=document.querySelector('.side-bar .bxs-chevron-right-circle');
+const arrow=document.querySelector('.side-bar .ri-arrow-right-circle-fill');
 
 arrow.addEventListener('click', () => { 
     arrow.classList.toggle('active_right_circle');
