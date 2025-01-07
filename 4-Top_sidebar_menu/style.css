@@ -85,7 +85,7 @@
 
 .side-bar-contents h5{
     color: #bdc3c7;
-    margin: 4px 0px; 
+    margin: 10px 0px; 
     white-space: nowrap;
     /*text-align: center;*/
 }
@@ -101,7 +101,7 @@
     font-size: 15px;
     font-weight: 400;  
     border-right: 4px solid transparent;
-	border-radius: 5px; 
+	  border-radius: 5px; 
     text-decoration: none;
 }
 
@@ -129,6 +129,7 @@
 .side-bar .side-bar-link:nth-child(5){
     border-color:#e74c3c;
     color: #e74c3c;
+    background: #f4f6f7;
  }
 
 .side-bar .side-bar-link:hover{
