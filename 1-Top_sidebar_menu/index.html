@@ -20,34 +20,40 @@
         </div>
         <div class="side-bar-contents">
             <h5>Menu</h5>
-            <a href="#" class="side-bar-link">
+            <a href="#" class="side-bar-link icon">
                 <i class="ri-shopping-bag-4-line"></i>
                 <p>All Shop</p>
+                <span class="popup">All Shop</span>             
             </a> 
             <a href="#" class="side-bar-link">
                 <i class="ri-discount-percent-line"></i>
-                <p>Product Discounts</p>
+                <p>Product Discounts</p>  
+                <i class="ri-arrow-drop-down-line"></i>                 
             </a>
+            <ul class="submenu">
+                <li><a href="#">Summer Sale</a></li>
+                <li><a href="#">Winter Discounts</a></li>
+                <li><a href="#">Fall Clearance</a></li>
+            </ul>
             <a href="#" class="side-bar-link">
                 <i class="ri-shopping-cart-2-line"></i>
                 <p>Sales</p>
+                <span class="popup">Sales</span>
             </a>
             <a href="#" class="side-bar-link">
                 <i class="ri-shield-check-line"></i>
                 <p>Security</p>
-                <p class="Budgets">2</p>
+                <p class="security">2</p>
+                <span class="popup">Security</span>
             </a> 
-            <a href="#" class="side-bar-link">
-                <i class="ri-history-line"></i>
-                <p>Shipping History</p>
-            </a>
             <a href="#" class="side-bar-link">
                 <i class="ri-wallet-3-line"></i>
                 <p>Payment</p>
+                <span class="popup">Payment</span>
             </a>
         </div>
         <div class="side-bar-bottom">
-            <h5>Onboarding</h5>
+            <h5>Onboa<span>rding</span></h5>
             <div class="more">
                 <a href="#">
                     <i class="ri-notification-3-line"></i>
@@ -55,7 +61,10 @@
                 </a>
                 <a href="#"><i class="ri-qr-scan-2-line"></i></a>
                 <a href="#"><i class="ri-questionnaire-line"></i></a>
-                <i class="ri-moon-clear-fill"></i>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
             </div>
             <div class="new_product">
                 <div>
@@ -72,14 +81,4 @@
     </div>
 </body>
 <script src="javascript.js"></script>
-<script>
-    const side_bar= document.querySelector('.side-bar'); 
-    const size= document.querySelector('.ri-arrow-right-circle-fill');
-    side_bar.addEventListener('mouseover', () => {
-        size.style.visibility="visible"; 
-    }); 
-    side_bar.addEventListener('mouseleave', () => {
-        size.style.visibility="hidden";  
-    });
-</script>
 </html>
