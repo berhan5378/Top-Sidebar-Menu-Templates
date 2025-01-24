@@ -162,7 +162,7 @@
 	border: none;
 	border-radius: 5px; 
     text-decoration: none;
-    transition:color .5s ease-in-out;
+    transition:color .5s ease-in-out,background .5s ease-in-out;
 }
 .side-bar .side-bar-link:nth-child(2){
     color: #ec7063;
