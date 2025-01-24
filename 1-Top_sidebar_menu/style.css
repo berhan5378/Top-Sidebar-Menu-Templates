@@ -51,7 +51,7 @@
     white-space: nowrap;
  }
 
- .side-bar{
+ .side-bar{ 
     position: absolute;
     left: 0;
     width: 280px;
@@ -81,7 +81,7 @@
     font-size: 25px;  
     transition: .5s ease-in-out;
     background: #FEAE97;
-    color: #7056d6;
+    color: var(--background_for_side_bar);
     border-radius: 50%;
     cursor: pointer;
 }
@@ -120,12 +120,14 @@
 
 .side-bar-search .input::placeholder { 
     color: var(--color_for_input_placeholder);
+    transition: .5s ease-in-out;
 }
 
 .side-bar-search .svg_icon {
 	position: absolute;
 	left: 19px;
 	fill: var(--fill_for_svg_icon);
+    transition: fill .5s ease-in-out;
 	width: 18px;
 	height: 18px;
 }
@@ -140,8 +142,13 @@
 .side-bar h5{
     color: var(--color_for_h);
     margin: 15px 10px;
-    /*text-align: center;*/
+    transition: .5s ease-in-out;
 }
+
+.active_side-bar h5 span {
+    opacity: 0;
+}
+
 .side-bar .side-bar-link{
     position: relative;
     display: flex;
@@ -155,6 +162,7 @@
 	border: none;
 	border-radius: 5px; 
     text-decoration: none;
+    transition:color .5s ease-in-out;
 }
 .side-bar .side-bar-link:nth-child(2){
     color: #ec7063;
@@ -184,6 +192,67 @@
     background: var(--background_for_bar_link);
  }
 
+.side-bar-link  .popup {
+  display: none;
+  position: absolute;
+  background-color: var(--color_for_h);
+  color: var(--background_for_side_bar);
+  padding: 10px;
+  left: 0;
+  top: -45px;
+  font-size: 10px;
+  text-align: center;
+  width: 95%;
+  border-radius: 5px;
+  z-index: 100;  
+}
+.active_side-bar .side-bar-link:hover .popup {
+    display: block;
+}
+ .side-bar-link .ri-arrow-drop-down-line {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 25px;
+    transition: transform .5s ease-in-out;
+ } 
+.dropdown .ri-arrow-drop-down-line {
+    transform: rotate(180deg);
+ }
+ .active_side-bar .ri-arrow-drop-down-line {
+    right: -5px;
+ }
+.submenu {
+    display: none;
+    background:var(--background_for_side_bar); 
+    transition: padding .5s ease-in-out,background .5s ease-in-out,background .5s ease-in-out,transform .5s ease-in-out ;
+}
+.dropdown + .submenu {
+    display: block;
+    padding: 5px;
+}
+.active_side-bar .submenu {
+    position: absolute;
+    border-radius: 10px;
+    left: 60px;
+    z-index: 100;
+    transform: translate(30px, -20px);
+}
+.side-bar-link + .submenu li{
+     padding: 5px 0; 
+     margin-left: 70px; 
+     color: var(--color_for_h);
+     transition:color .5s ease-in-out;
+}
+.active_side-bar .submenu li{
+    margin-left: 20px;
+}
+.side-bar-link + .submenu li a{
+     text-decoration: none;
+     color: var(--color_for_h);
+     transition:color .5s ease-in-out;
+} 
+
  .side-bar .side-bar-bottom{ 
     overflow: hidden;
 }
@@ -201,6 +270,7 @@
     position: relative;
     text-decoration: none;
     color: var(--color_for_h);
+    transition: color.5s ease-in-out;
 }
 .side-bar .notification{
     position: absolute;
