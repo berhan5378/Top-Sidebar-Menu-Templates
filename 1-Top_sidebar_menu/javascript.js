@@ -7,4 +7,8 @@ const arrow=document.querySelector('.side-bar .ri-arrow-right-circle-fill'),
       checkbox.addEventListener('change', () => 
         document.querySelector('body').classList.toggle('themes')
       );
-      
+      document.querySelectorAll('.side-bar-link').forEach(element => {
+          element.addEventListener('click', () => {
+          element.classList.toggle('dropdown');
+        });
+      });
