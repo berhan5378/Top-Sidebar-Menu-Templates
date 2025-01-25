@@ -11,65 +11,75 @@
     <div class="side-bar">
         <div class="logo">
             <div class="logo-content">
-                <img src="favpng_logo-graphic-design.png" alt="img">
+                <img src="img/favpng_logo-graphic-design.png" alt="img">
                 <h3>Design Lab</h3>
             </div>
-            <i class="ri-settings-2-line"></i>
         </div>
-        <i class="ri-arrow-right-circle-fill"></i>
+        <i class="ri-arrow-left-circle-fill"></i>
         <div class="side-bar-search">
             <svg xmlns="http://www.w3.org/2000/svg" class="svg_icon bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path></svg>
             <input class="input" type="text" placeholder="Search">
         </div>
         <div class="side-bar-contents">
             <h5>GENERAL</h5>
-            <a href="#" class="side-bar-link">
+            <a href="#" class="side-bar-link" data-popup="popup1">
                 <i class="ri-dashboard-horizontal-line"></i>
                 <p>Dashboard</p>
             </a>
-            <a href="#" class="side-bar-link">
+            <span id="popup1" class="popup">Dashboard</span>
+            <a href="#" class="side-bar-link" data-popup="popup2">
                 <i class="ri-list-check-3"></i>
                 <p>To-do List</p>
                 <p class="To_do_list">08</p>
             </a>
-            <a href="#" class="side-bar-link">
+            <span id="popup2" class="popup">To-do List</span>
+            <a href="#" class="side-bar-link" data-popup="popup3">
                 <i class="ri-folders-line"></i>
                 <p>Projects</p>
             </a>
-            <a href="#" class="side-bar-link">
+            <span id="popup3" class="popup">Projects</span>
+            <a href="#" class="side-bar-link" data-popup="popup4">
                 <i class="ri-money-dollar-circle-line"></i>
                 <p>Budgets</p>
                 <p class="Budgets">New</p>
             </a>
-            <a href="#" class="side-bar-link">
+            <span id="popup4" class="popup">Budgets</span>
+            <a href="#" class="side-bar-link" data-popup="popup5">
                 <i class="ri-align-item-top-line"></i>
                 <p>Templates</p>
             </a>
-            <a href="#" class="side-bar-link">
+            <span id="popup5" class="popup">Templates</span>
+            <a href="#" class="side-bar-link" data-popup="popup6">
                 <i class="ri-bar-chart-line"></i>
                 <p>Reports</p>
             </a>
+            <span id="popup6" class="popup">Reports</span>
             <h5>MY SPACES</h5>
-            <a href="#" class="side-bar-link">
+            <a href="#" class="side-bar-link" data-popup="popup7">
                 <i class="ri-menu-4-line"></i>
                 <p>All</p>
             </a>
-            <a href="#" class="side-bar-link">
+            <span id="popup7" class="popup">All</span>
+            <a href="#" class="side-bar-link" data-popup="popup8">
                 <i class="ri-user-3-line"></i>
                 <p>Assigned to me</p>
             </a>
-            <a href="#" class="side-bar-link">
+            <span id="popup8" class="popup">Assigned to me</span>
+            <a href="#" class="side-bar-link" data-popup="popup9">
                 <i class="ri-user-shared-line"></i>
                 <p>Shared</p>
             </a>
-            <a href="#" class="side-bar-link">
+            <span id="popup9" class="popup">Shared</span>
+            <a href="#" class="side-bar-link" data-popup="popup10">
                 <i class="ri-shield-check-line"></i>
                 <p>Private</p>
             </a>
-            <a href="#" class="side-bar-link">
+            <span id="popup10" class="popup">Private</span>
+            <a href="#" class="side-bar-link" data-popup="popup11">
                 <i class="ri-user-add-line"></i>
                 <p>Add team member</p>
             </a>
+            <span id="popup11" class="popup">Add team member</span>
         </div>
         <div class="side-bar-bottom">
             <div class="more">
@@ -79,27 +89,18 @@
                 </a>
                 <a href="#"><i class="ri-qr-scan-2-line"></i></a>
                 <a href="#"><i class="ri-questionnaire-line"></i></a>
-                <i class="ri-moon-clear-fill"></i>
+                <a href="#"><i class="ri-settings-2-line"></i></a>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
             </div> 
             <div class="profile">
-                <img src="3d-illustration-cartoon-character-avatar-profile_1183071-154.avif" alt="img">
+                <img src="img/3d-illustration-cartoon-character-avatar-profile_1183071-154.avif" alt="img">
                 <p>Codingberhan</p>
             </div>
         </div>
     </div>
 </body>
 <script src="javascript.js"></script>
-<script>
-    const side_bar= document.querySelector('.side-bar');
-    const scrollable= document.querySelector('.side-bar-contents');
-    const size= document.querySelector('.ri-arrow-right-circle-fill');
-    side_bar.addEventListener('mouseover', () => {
-        size.style.visibility="visible"; 
-        scrollable.style.overflowY="auto"; // Add the class to show the scrollbar
-    }); 
-    side_bar.addEventListener('mouseleave', () => {
-        size.style.visibility="hidden"; 
-        scrollable.style.overflowY="hidden"; // Remove the class to hide the scrollbar
-    });
-</script>
 </html>
