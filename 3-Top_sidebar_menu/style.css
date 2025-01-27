@@ -61,7 +61,6 @@
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
     transition: .5s ease-in-out;
-
  }
 
  .side-bar .logo{
@@ -328,4 +327,17 @@
     --fill_for_svg_icon : #d0d3d4;
     --color_for_h :#d0d3d4 ;
     --background_for_bar_link : #17202a;
+}
+
+@media (max-width: 768px) {
+    .side-bar-contents{
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .side-bar {
+        overflow: hidden;
+    }
+    .popup{
+        display: none;
+    }
 }
